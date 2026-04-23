@@ -10,11 +10,31 @@ Only things actually covered or handed out in class go here.
 
 ---
 
-## Shared pipeline template
+## Class 1 — 2026-04-20
 
-_Discussed in Class 3. Kept at the top because every class refers back to this._
+**Topic:** Project intro — what RAG is, why we need it for 3GPP, high-level system walkthrough.
 
-Directory layout — what each file is responsible for:
+**Links shared:**
+- Docling (document parsing, IBM): https://github.com/docling-project/docling
+- LiteParse (lightweight document parser, LlamaIndex): https://github.com/run-llama/liteparse
+
+---
+
+## Class 2 — 2026-04-21
+
+**Topic:** Word2Vec and embedding intuition — how words become vectors, cosine similarity, bridge to sentence embedders (BGE).
+
+**Links shared:**
+- Word2Vec Explained (Israel Grubman): https://israelg99.github.io/2017-03-23-Word2Vec-Explained/
+- Colab notebook: https://colab.research.google.com/drive/1aes3A6AumwokaSmdHL4F477Eb-PBdWLD?usp=sharing
+
+---
+
+## Class 3 — 2026-04-22
+
+**Topic:** Architecture deep dive — what each file in `rag/` does, ingest → retrieve → generate at code level.
+
+**Shared in class — pipeline code template (use this as a starting point for your own build):**
 
 ```text
 rag/
@@ -68,34 +88,6 @@ user question  →  tui.py  →  agent.py  →  client.py  →  service.py  → 
                               ↓
                           vLLM (gemma-4-E4B)  →  cited answer
 ```
-
----
-
-## Class 1 — 2026-04-20
-
-**Topic:** Project intro — what RAG is, why we need it for 3GPP, high-level system walkthrough.
-
-**Links shared:**
-- Docling (document parsing, IBM): https://github.com/docling-project/docling
-- LiteParse (lightweight document parser, LlamaIndex): https://github.com/run-llama/liteparse
-
----
-
-## Class 2 — 2026-04-21
-
-**Topic:** Word2Vec and embedding intuition — how words become vectors, cosine similarity, bridge to sentence embedders (BGE).
-
-**Links shared:**
-- Word2Vec Explained (Israel Grubman): https://israelg99.github.io/2017-03-23-Word2Vec-Explained/
-- Colab notebook: https://colab.research.google.com/drive/1aes3A6AumwokaSmdHL4F477Eb-PBdWLD?usp=sharing
-
----
-
-## Class 3 — 2026-04-22
-
-**Topic:** Architecture deep dive — what each file in `rag/` does, ingest → retrieve → generate at code level.
-
-**Shared in class:** the directory template above (see "Shared pipeline template" section).
 
 **Links shared:**
 - TSpec-LLM dataset (Rasoul Nikbakht, HuggingFace): https://huggingface.co/datasets/rasoul-nikbakht/TSpec-LLM/tree/main
