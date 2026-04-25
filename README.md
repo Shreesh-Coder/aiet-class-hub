@@ -94,7 +94,21 @@ user question  →  tui.py  →  agent.py  →  client.py  →  service.py  → 
 
 ---
 
-## Class 4 onwards — TBD
+## Class 4 — 2026-04-24
+
+**Topic:** Practical LLMs — choosing models and providers, comparing quality/speed/cost, finding open models, using hosted routing APIs, and understanding efficiency ideas such as MoE and quantization.
+
+
+**Links shared:**
+- Artificial Analysis (model and provider benchmarks): https://artificialanalysis.ai/
+- Switch Transformers paper (MoE / sparse experts): https://arxiv.org/pdf/2101.03961
+- OpenRouter (one API for many hosted models): https://openrouter.ai/
+- Hugging Face (models, datasets, spaces, model cards): https://huggingface.co/
+- TurboQuant blog (Google Research, compression for KV cache and vector search): https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/
+
+---
+
+## Class 5 onwards — TBD
 
 Add a new section per class as it happens. Format:
 
